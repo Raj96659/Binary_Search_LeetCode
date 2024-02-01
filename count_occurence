@@ -1,0 +1,22 @@
+Problem Statement: You are given a sorted array containing N integers and a number X, you have to find the occurrences of X 
+in the given array.
+Example 1:
+Input: N = 7,  X = 3 , array[] = {2, 2 , 3 , 3 , 3 , 3 , 4}
+Output: 4
+Explanation: 3 is occurring 4 times in 
+the given array so it is our answer.
+
+
+
+int count(vector<int>& arr, int n, int x) {
+	// Write Your Code Here
+	int cnt=0;
+	for(int i=0;i<n;i++)
+	{
+		if(arr[i]==x)
+		{
+			cnt++;
+		}
+	}
+	return cnt;
+}
